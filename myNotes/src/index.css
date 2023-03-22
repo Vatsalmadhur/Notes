@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.noteBox{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+textarea{
+    resize: none;
+    border: none;
+
+}
+textarea:focus{
+    outline: none; 
+}
