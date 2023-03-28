@@ -47,6 +47,7 @@ const App = () => {
 
   return (
     <>
+    <p className="heading">Notes</p>
     <Search handelSearchNote={setSearchNote} />
       <NotesList
         notes={notes.filter((note)=>

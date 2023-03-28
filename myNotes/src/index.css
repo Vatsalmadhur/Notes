@@ -2,11 +2,25 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: rgb(182, 221, 255);
+}
+.heading{
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+.search{
+    height:40px;
+    width:min(200px,30%);
+    border: none;
+    padding-bottom: 16px;
+    border: 2px solid black;
+}
 .noteList{
     height: auto;
     width: 100vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -16,26 +30,85 @@
 .noteBox{
     height: 250px;
     width: min(400px,100%);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     white-space: pre-wrap;
     border-radius: 20px;
     padding: 10px;
 margin: 10px;
-background-color: rgb(162, 107, 203);
+background-color:rgba(255, 255, 111, 0.84);
+/* background-color: rgb(2, 201, 161); */
+position: relative;
+word-wrap: break-word;
+
+}
+.noteBox:hover{
+    scale: 1.05;
+    transform: scale(1.05) 2s;
+    transition: 0.3s ;
+
+}
+.noteHeading{
+    font-size: 1.2rem;
 
 }
 
+.date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 
+}
+.delIcon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 
+}
+.noteBoxAdd{
+    height: 250px;
+    width: min(400px,100%);
+    white-space: pre-wrap;
+    border-radius: 20px;
+    padding: 10px;
+margin: 10px;
+/* background-color:rgba(255, 255, 111, 0.84); */
+background-color: rgb(2, 201, 161);
+position: relative;
+word-wrap: break-word;
 
+}
 
 
 
 textarea{
     resize: none;
     border: none;
+    background-color: rgb(2, 201, 161);
+color: #fff;
+font-size: 1rem;
 
 }
 textarea:focus{
     outline: none; 
+}
+.charRem{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+font-size: 1rem;
+
+
+}
+.newNoteBtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 25px;
+    width: 100px;
+    border:none;
+    background-color: white;
+    border-radius: 10px;
+}
+.newNoteBtn:hover{
+cursor: pointer;
 }

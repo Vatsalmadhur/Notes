@@ -18,7 +18,7 @@ const AddNote = ({ handelAddNote }) => {
 
 
   return (
-    <div className="noteBox">
+    <div className="noteBoxAdd">
       <textarea
         placeholder="Add a note..."
         id=""
